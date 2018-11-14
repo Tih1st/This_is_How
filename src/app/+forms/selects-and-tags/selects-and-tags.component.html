@@ -1,0 +1,175 @@
+<h4 class="font-weight-bold py-3 mb-4">
+  <span class="text-muted font-weight-light">Forms /</span> Selects and tags
+</h4>
+
+<div class="card mb-4">
+  <h6 class="card-header">
+    angular-2-dropdown-multiselect
+  </h6>
+  <div class="card-body demo-vertical-spacing demo-blocks">
+    <!-- Default -->
+    <ss-multiselect-dropdown
+      [settings]="defaultSettings"
+      [options]="defaultOptions"
+      [(ngModel)]="defaultModel">
+    </ss-multiselect-dropdown>
+
+    <pre>{{ defaultModel | json }}</pre>
+
+    <!-- With search input -->
+    <ss-multiselect-dropdown
+      [settings]="searchSettings"
+      [options]="defaultOptions"
+      [(ngModel)]="defaultModel">
+    </ss-multiselect-dropdown>
+
+    <!-- With icons -->
+    <ss-multiselect-dropdown
+      [settings]="iconSettings"
+      [options]="defaultOptions"
+      [(ngModel)]="defaultModel">
+    </ss-multiselect-dropdown>
+
+    <!-- Single -->
+    <ss-multiselect-dropdown
+      [settings]="singleSettings"
+      [options]="singleOptions"
+      [(ngModel)]="singleModel">
+    </ss-multiselect-dropdown>
+
+    <pre>{{ singleModel | json }}</pre>
+
+    <!-- Grouped -->
+    <ss-multiselect-dropdown
+      [settings]="groupedSettings"
+      [options]="groupedOptions"
+      [(ngModel)]="groupedModel">
+    </ss-multiselect-dropdown>
+
+    <pre>{{ groupedModel | json }}</pre>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <h6 class="card-header">
+    ng-select
+  </h6>
+  <div class="card-body demo-vertical-spacing">
+    <ng-select
+      placeholder="Select state"
+      [allowClear]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="singleSelectValue">
+    </ng-select>
+
+    <ng-select
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <pre>Single value: {{ singleSelectValue | json }}</pre>
+    <pre>Multiple value: {{ multipleSelectValue | json }}</pre>
+
+    <button class="btn" [class.btn-outline-danger]="disabled" [class.btn-outline-success]="!disabled" (click)="disabled = !disabled">
+      {{ disabled ? "Disabled" : "Enabled"}}
+    </button>
+
+    <!-- Variants -->
+
+    <ng-select class="ng-select-primary"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <ng-select class="ng-select-secondary"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <ng-select class="ng-select-success"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <ng-select class="ng-select-info"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <ng-select class="ng-select-warning"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <ng-select class="ng-select-danger"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <ng-select class="ng-select-dark"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <!-- Validation states -->
+
+    <!-- Valid -->
+    <ng-select class="is-valid"
+      placeholder="Select state"
+      [allowClear]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="singleSelectValue">
+    </ng-select>
+    <ng-select class="is-valid"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+
+    <!-- Invalid -->
+    <ng-select class="is-invalid"
+      placeholder="Select state"
+      [allowClear]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="singleSelectValue">
+    </ng-select>
+    <ng-select class="is-invalid"
+      placeholder="Select state"
+      [multiple]="true"
+      [disabled]="disabled"
+      [options]="selectOptions"
+      [(ngModel)]="multipleSelectValue">
+    </ng-select>
+  </div>
+</div>
+
+<ngx-chips-example></ngx-chips-example>

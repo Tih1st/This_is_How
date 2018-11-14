@@ -1,0 +1,49 @@
+<!-- 
+<div style="float: left; width: 50%">
+        <h4 class="font-weight-bold py-3 mb-4">Rehan's parser</h4>
+        <div>
+          <label>URL:
+            <br>
+            <input [(ngModel)]="inputdata.url" placeholder="url link" style="width: 600px">
+          </label>
+        </div>
+        <p>disabled amazon s3 upload/list for now</p>
+        
+        <div style="width: 600px;"> 
+            <div>
+                <strong>PARSE DATA:</strong>
+
+                <div style="height:300px;">
+                    <json-editor #editorOne [options]="editorOptions" [data]="DataP" ></json-editor>
+                  </div>
+                  <br>
+                </div>
+            <br>
+            <strong>CONFIG DATA:</strong>
+            <json-editor #editorTwo [options]="editorOptions" [data]="ConfigP" ></json-editor>
+            <br>
+            <button class="btn btn-primary" (click)="doPOST()">POST FROM EDITOR</button>
+        </div>
+        
+        </div>
+        
+        <div style="float: right; width: 50%">
+                <div *ngIf = "textButton" >
+                  <button style="display: block; margin: 0 auto;" class="btn btn-primary" (click)="switchToText()">Switch to Text</button>
+                </div>
+                <div *ngIf = "treeButton">
+                    <button style="display: block; margin: 0 auto;" class="btn btn-primary" (click)="switchToTree()">Switch to Tree</button>
+                </div>
+                  <br>
+                  <div style="text-align: center;" *ngIf = "outputTree" style="background-color: lightgrey">
+                  <ngx-json-viewer [json]="data" [expanded]="true"></ngx-json-viewer>
+                  </div>
+                  <div style="text-align: center;" *ngIf = "outputText">
+                      <label> <strong>OUTPUT:</strong> 
+                        <br>
+                        <textarea [(ngModel)]="outputdata.output" rows="37" cols="110" wrap = off readonly = true style = "background-color: lightgray">
+                        </textarea>
+                      </label>
+                  </div>
+                </div>
+             -->

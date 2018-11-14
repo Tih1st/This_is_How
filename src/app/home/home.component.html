@@ -1,0 +1,56 @@
+<!-- <div style="float: left; width: 50%">
+<h4 class="font-weight-bold py-3 mb-4">BaleMail 2.0 Test Demo</h4>
+<div>
+  <label>URL:
+    <br>
+    <input [(ngModel)]="inputdata.url" placeholder="name" style="width: 600px">
+  </label>
+</div>
+<p>Try copy and pasting the FlatLine data below. </p>
+<p> <strong>
+  3500B988061118039631FB94,15404759956, 32.514352, -96.592427,2015/9/28,15:10:11,3,Billy Smith,1105,Robins,1,1N0C690SVF4055088       ,,Littleton Gin              ,Smith Farms            ,00:10:11,12311,1, 0.0,248,0 <br>
+  3500B988061117039631FB93,15404759955, 32.513040, -96.593325,2015/9/28,16:51:27,2,Billy Smith,9488,Sanderson,1,1N0C690SVF4055088       ,,Littleton Gin              ,Smith Farms            ,01:51:27,27284,2, 0.0,249,0<br>
+  3500B988061116039631FB92,15404759954, 32.516826, -96.595202,2015/9/28,17:33:04,4,Billy Smith,9488,Sanderson,1,1N0C690SVF4055088       ,,Littleton Gin              ,Smith Farms            ,02:33:04,46539,3, 0.0,234,0
+  </strong></p>
+
+<div>
+  <label> <strong>INPUT:</strong> 
+    <br>
+    <textarea [(ngModel)]="inputdata.input" placeholder="Input Text" rows="10" cols="80" wrap = off>
+    </textarea>
+  </label>
+  <br>
+  <button class="btn btn-primary" (click)="doPOST()">POST FROM TEXT AREA</button>
+</div>
+<br>
+<div style="width: 600px;">
+    <json-editor [options]="editorOptions" [data]="editorDataP1" ></json-editor>
+    <br>
+    <button class="btn btn-primary" (click)="doPOSTeditor()">POST FROM EDITOR</button>
+</div>
+</div>
+
+<div style="float: right; width: 50%">
+<div *ngIf = "textButton" >
+  <button style="display: block; margin: 0 auto;" class="btn btn-primary" (click)="switchToText()">Switch to Text</button>
+</div>
+<div *ngIf = "treeButton">
+    <button style="display: block; margin: 0 auto;" class="btn btn-primary" (click)="switchToTree()">Switch to Tree</button>
+</div>
+  <br>
+  <div style="text-align: center;" *ngIf = "outputTree" style="background-color: lightgrey">
+  <ngx-json-viewer [json]="data" [expanded]="true"></ngx-json-viewer>
+  </div>
+  <div style="text-align: center;" *ngIf = "outputText">
+      <label> <strong>OUTPUT:</strong> 
+        <br>
+        <textarea [(ngModel)]="outputdata.output" rows="37" cols="110" wrap = off readonly = true style = "background-color: lightgray">
+        </textarea>
+      </label>
+  </div>
+</div>
+ -->
+
+ <div style="float: left; width: 50%">
+  <h4 class="font-weight-bold py-3 mb-4">BaleMail 2.0 Test Demo</h4>
+  <div>

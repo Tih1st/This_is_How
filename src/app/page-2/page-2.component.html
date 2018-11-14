@@ -1,0 +1,57 @@
+<!-- <div style="float: left; width: 50%">
+<h4 class="font-weight-bold py-3 mb-4">tap-ts-starter</h4>
+<div>
+  <label>URL:
+    <br>
+    <input [(ngModel)]="inputdata.url" placeholder="name" style="width: 600px">
+  </label>
+</div>
+<p>disabled amazon s3 upload/list for now</p>
+
+
+<app-form-upload></app-form-upload>
+<br>
+<br>
+<app-list-upload></app-list-upload>
+<br>
+<br>
+
+<div style="width: 600px;"> 
+    <div>
+            <label> <strong>PARSE DATA:</strong> 
+              <br>
+              <textarea [(ngModel)]="inputdata.input" placeholder="Input Text" rows="10" cols="80" wrap = off>
+              </textarea>
+            </label>
+            <br>
+          </div>
+    <br>
+    <strong>CONFIG DATA:</strong>
+    <json-editor [options]="editorOptions" [data]=ConfigP ></json-editor>
+    <br>
+    <button class="btn btn-primary" (click)="doPOSTeditor()">POST FROM EDITOR</button>
+</div>
+
+</div>
+
+<div style="float: right; width: 50%">
+    <div *ngIf = "textButton" >
+      <button style="display: block; margin: 0 auto;" class="btn btn-primary" (click)="switchToText()">Switch to Text</button>
+    </div>
+    <div *ngIf = "treeButton">
+        <button style="display: block; margin: 0 auto;" class="btn btn-primary" (click)="switchToTree()">Switch to Tree</button>
+    </div>
+      <br>
+      <div style="text-align: center;" *ngIf = "outputTree" style="background-color: lightgrey">
+      <ngx-json-viewer [json]="data" [expanded]="true"></ngx-json-viewer>
+      </div>
+      <div style="text-align: center;" *ngIf = "outputText">
+          <label> <strong>OUTPUT:</strong> 
+            <br>
+            <textarea [(ngModel)]="outputdata.output" rows="37" cols="110" wrap = off readonly = true style = "background-color: lightgray">
+            </textarea>
+          </label>
+      </div>
+    </div>
+
+ -->
