@@ -20,10 +20,10 @@ export class LayoutNavbarComponent {
     private layoutService: LayoutService,
     public auth: AuthService) {
     this.isRTL = appService.isRTL;
-    if (!auth.isAuthenticated()){
-      auth.handleAuthentication();
-      auth.login()
-    }
+    // if (!auth.isAuthenticated()){
+    //   auth.handleAuthentication();
+    //   auth.login()
+    // }
   }
 
   currentBg() {

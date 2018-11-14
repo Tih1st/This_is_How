@@ -14,8 +14,8 @@ export class AuthService {
     responseType: 'token id_token',
     audience: `https://${AUTH_CONFIG.domain}/userinfo`,
     // redirectUri: 'https://serene-bose-588a2f.netlify.com/', //FOR DEPLOYED SITE.
-    //redirectUri: 'https://priceless-stonebraker-28f31a.netlify.com/', //FOR DEPLOYED SITE.
-    redirectUri: 'http://localhost:4200', //MUST BE CHANGED TO SITE NAME WHEN DEPLOYING.
+    redirectUri: 'https://practical-newton-080ede.netlify.com/', //FOR DEPLOYED SITE.
+    // redirectUri: 'http://localhost:4200', //MUST BE CHANGED TO SITE NAME WHEN DEPLOYING.
     scope: 'openid'
   });
 
